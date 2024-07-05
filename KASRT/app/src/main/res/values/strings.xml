@@ -1,0 +1,12 @@
+ <resources>
+        <string name="app_name">Kampung Durian Runtuh</string>
+         <string-array name="payment_methods">
+             <item>Cash</item>
+             <item>Transfer Bank</item>
+             <item>e-Wallet</item>
+         </string-array>
+     <string name="event_image">Gambar Peristiwa</string>
+     <string name="security_event_image"></string>
+     <string name="login_failed">Login gagal. Periksa email dan password Anda.</string>
+     <string name="login_success">Login berhasil.</string>
+ </resources>

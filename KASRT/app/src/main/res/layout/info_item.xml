@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="12dp"
+    android:background="@color/orange"
+    android:layout_marginBottom="8dp"
+    android:elevation="4dp">
+
+    <ImageView
+        android:id="@+id/infoImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:src="@drawable/bg_iklan"
+        android:contentDescription="Informasi Gambar"
+        android:scaleType="centerCrop"
+        android:layout_marginBottom="8dp" />
+
+    <TextView
+        android:id="@+id/infoName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Informasi"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingTop="4dp"
+        android:paddingBottom="4dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/infoDescription"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Keterangan informasi"
+        android:textSize="14sp"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="4dp"
+        android:textColor="@color/black"/>
+
+    <TextView
+        android:id="@+id/infoSender"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nama Pengirim"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="2dp" />
+
+    <TextView
+        android:id="@+id/infoTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Waktu Informasi"
+        android:textSize="12sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:paddingBottom="4dp" />
+</LinearLayout>

@@ -1,0 +1,79 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LaporanKasActivity"
+    android:background="@color/light_cyan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Laporan Kas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Nama: "
+            android:textSize="16sp"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvJumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Jumlah: "
+            android:textSize="16sp"
+            android:layout_below="@id/tvNama"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvMetodeTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Metode Transfer: "
+            android:textSize="16sp"
+            android:layout_below="@id/tvJumlah"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvDetailTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Detail Transfer: "
+            android:textSize="16sp"
+            android:layout_below="@id/tvMetodeTransfer"
+            android:layout_marginBottom="8dp" />
+
+        <ImageView
+            android:id="@+id/ivBuktiTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_below="@id/tvDetailTransfer"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Bukti Transfer" />
+
+        <TextView
+            android:id="@+id/tvKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Keterangan: "
+            android:textSize="16sp"
+            android:layout_below="@id/ivBuktiTransfer"
+            android:layout_marginBottom="16dp" />
+    </RelativeLayout>
+
+</ScrollView>

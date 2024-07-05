@@ -1,0 +1,333 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".MainActivity">
+
+    <!-- Toolbar Section -->
+    <LinearLayout
+        android:id="@+id/toolbar_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="16dp"
+        android:background="@color/light_teal">
+
+        <TextView
+            android:id="@+id/toolbar_title"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Kampung Durian Runtuh"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <ImageView
+            android:id="@+id/toolbar_logo"
+            android:layout_width="51dp"
+            android:layout_height="34dp"
+            android:src="@drawable/logolauncher" />
+    </LinearLayout>
+
+    <!-- Announcement Section -->
+    <LinearLayout
+        android:id="@+id/announcement_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:layout_below="@id/toolbar_section">
+
+        <TextView
+            android:id="@+id/announcement_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="SISTEM RT 004/RW 001"
+            android:textColor="@color/white"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+
+        <ViewFlipper
+            android:id="@+id/viewFlipper"
+            android:layout_width="match_parent"
+            android:layout_height="181dp"
+            android:layout_marginTop="16dp">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_iklan" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:scaleType="centerCrop"
+                android:src="@drawable/bg_iklan2" />
+        </ViewFlipper>
+
+    </LinearLayout>
+
+    <!-- Menu Section -->
+    <GridLayout
+        android:id="@+id/menu_section"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/announcement_section"
+        android:columnCount="3"
+        android:orientation="horizontal"
+        android:padding="16dp">
+
+        <!-- Menu Item 1 -->
+        <LinearLayout
+            android:id="@+id/btnLaporanKas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/laporan_kas_button"
+                android:layout_width="77dp"
+                android:layout_height="79dp"
+                android:background="@drawable/ic_laporankas" />
+
+            <TextView
+                android:id="@+id/laporan_kas_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Laporan Kas"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Menu Item 2 -->
+        <LinearLayout
+            android:id="@+id/btnDaftarWarga"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/data_warga_button"
+                android:layout_width="86dp"
+                android:layout_height="75dp"
+                android:background="@drawable/ic_datawarga" />
+
+            <TextView
+                android:id="@+id/data_warga_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Daftar Warga"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Menu Item 3 -->
+        <LinearLayout
+            android:id="@+id/btnTambahDokument"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/tambah_dokument_button"
+                android:layout_width="86dp"
+                android:layout_height="75dp"
+                android:background="@drawable/ic_tambahkdokument" />
+
+            <TextView
+                android:id="@+id/tambah_dokument_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Tambah Dokument"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Menu Item 4 -->
+        <LinearLayout
+            android:id="@+id/btnBayarKas"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/bayar_kas_button"
+                android:layout_width="110dp"
+                android:layout_height="71dp"
+                android:background="@drawable/ic_pembayarankas" />
+
+            <TextView
+                android:id="@+id/bayar_kas_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Bayar Kas"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Menu Item 5 -->
+        <LinearLayout
+            android:id="@+id/btnSecurity"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/keamanan_button"
+                android:layout_width="78dp"
+                android:layout_height="71dp"
+                android:background="@drawable/ic_keamanan" />
+
+            <TextView
+                android:id="@+id/keamanan_text"
+                android:layout_width="80dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Security"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <!-- Menu Item 6 -->
+        <LinearLayout
+            android:id="@+id/btnInformasi"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:layout_margin="8dp"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <ImageButton
+                android:id="@+id/informasi_button"
+                android:layout_width="78dp"
+                android:layout_height="72dp"
+                android:background="@drawable/ic_informasi" />
+
+            <TextView
+                android:id="@+id/informasi_text"
+                android:layout_width="79dp"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:paddingTop="8dp"
+                android:text="Informasi"
+                android:textColor="@color/black"
+                android:textSize="14sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+    </GridLayout>
+
+    <!-- Bottom Navigation -->
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:id="@+id/bottom_navigation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:background="@color/darker_blue"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:backgroundTint="@color/light_teal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/option_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_pilihan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/message_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_pesan" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/profile_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@null"
+                    android:padding="16dp"
+                    android:src="@drawable/ic_profile" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/copyright_section"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="© 2024 Kampung Durian Runtuh"
+            android:gravity="center"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:padding="16dp"
+            android:textSize="12sp"
+            android:layout_above="@id/bottom_navigation" />
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="@drawable/bg_home">
+
+    <Button
+        android:id="@+id/selectImageButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Pilih Gambar"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="16dp"
+        android:backgroundTint="@color/grey"
+        android:textColor="@android:color/white"
+        android:onClick="onSelectImageClicked" />
+
+    <EditText
+        android:id="@+id/nameEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Informasi"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:background="@color/light_cyan"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/descriptionEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Keterangan"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:background="@color/light_cyan"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/senderEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama Pengirim"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:background="@color/light_cyan"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:id="@+id/timeEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Waktu"
+        android:layout_marginTop="8dp"
+        android:padding="12dp"
+        android:background="@color/light_cyan"
+        android:textColor="@android:color/black" />
+
+</LinearLayout>

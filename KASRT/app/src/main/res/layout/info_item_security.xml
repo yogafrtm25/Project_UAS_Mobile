@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="8dp"
+    android:background="@color/white"
+    android:layout_marginBottom="8dp">
+
+    <ImageView
+        android:id="@+id/infoImage"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:contentDescription="@string/security_event_image"
+        android:scaleType="centerCrop" />
+
+    <TextView
+        android:id="@+id/infoDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Keterangan Peristiwa"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/infoSender"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Nama Pengirim"
+        android:textSize="16sp" />
+
+    <TextView
+        android:id="@+id/infoTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Waktu Peristiwa"
+        android:textSize="16sp" />
+</LinearLayout>

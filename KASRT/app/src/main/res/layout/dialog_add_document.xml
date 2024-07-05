@@ -1,0 +1,55 @@
+<!-- res/layout/dialog_add_document.xml -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/input_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Nama" />
+
+    <EditText
+        android:id="@+id/input_birthdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Tempat Tanggal Lahir" />
+
+    <EditText
+        android:id="@+id/input_nik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="NIK" />
+
+    <EditText
+        android:id="@+id/input_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Alamat" />
+
+    <EditText
+        android:id="@+id/input_postal_code"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Kode Pos" />
+
+    <EditText
+        android:id="@+id/input_rt_rw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="RT/RW" />
+
+    <Button
+        android:id="@+id/btn_add_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tambahkan Foto Profil" />
+
+    <Button
+        android:id="@+id/btn_save"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Simpan" />
+</LinearLayout>

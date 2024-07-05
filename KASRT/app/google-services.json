@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "716268576557",
+    "project_id": "kasdurianruntuh",
+    "storage_bucket": "kasdurianruntuh.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:716268576557:android:ae0e5abfd67a4dacddfda4",
+        "android_client_info": {
+          "package_name": "co.id.kasrt"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDp3pJgo2DBvfqWWs_uiZREPqCJWwyZHzQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

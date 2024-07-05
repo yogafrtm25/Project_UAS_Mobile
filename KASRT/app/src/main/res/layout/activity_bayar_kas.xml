@@ -1,0 +1,124 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".BayarKasActivity"
+    android:background="@color/light_cyan">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <TextView
+            android:id="@+id/tvTitle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Bayar Kas"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etNama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Nama"
+            android:inputType="text"
+            android:layout_below="@id/tvTitle"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etJumlah"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Jumlah"
+            android:inputType="numberDecimal"
+            android:layout_below="@id/etNama"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/tvMetodeTransfer"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Metode Transfer"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_below="@id/etJumlah"
+            android:layout_marginBottom="8dp" />
+
+        <RadioGroup
+            android:id="@+id/rgMetodeTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tvMetodeTransfer"
+            android:layout_marginBottom="8dp">
+
+            <RadioButton
+                android:id="@+id/rbBank"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Transfer Bank" />
+
+            <RadioButton
+                android:id="@+id/rbEWallet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="E-Wallet" />
+        </RadioGroup>
+
+        <TextView
+            android:id="@+id/tvRekeningBank"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No. Rekening: 12313131 (BNI) a/n Yoga Pratama"
+            android:visibility="gone"
+            android:layout_below="@id/rgMetodeTransfer"
+            android:layout_marginBottom="8dp" />
+
+        <TextView
+            android:id="@+id/tvEWallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="E-Wallet Dana: 085771449774 a/n Yoga Pratama"
+            android:visibility="gone"
+            android:layout_below="@id/tvRekeningBank"
+            android:layout_marginBottom="16dp" />
+
+        <ImageView
+            android:id="@+id/ivBuktiTransfer"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/ic_launcher_foreground"
+            android:layout_below="@id/tvEWallet"
+            android:layout_marginBottom="16dp"
+            android:contentDescription="Bukti Transfer" />
+
+        <Button
+            android:id="@+id/btnUploadBukti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Unggah Bukti Transfer"
+            android:layout_below="@id/ivBuktiTransfer"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/etKeterangan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Keterangan"
+            android:layout_below="@id/btnUploadBukti"
+            android:layout_marginBottom="16dp" />
+
+        <Button
+            android:id="@+id/btnSimpan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Simpan"
+            android:layout_below="@id/etKeterangan" />
+
+    </RelativeLayout>
+
+</ScrollView>
